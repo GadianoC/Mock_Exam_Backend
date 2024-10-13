@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "372270835442",
+    "project_id": "mock-exam-maker-using-ai-9d0f5",
+    "storage_bucket": "mock-exam-maker-using-ai-9d0f5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:372270835442:android:a4c68de0254128cded526b",
+        "android_client_info": {
+          "package_name": "com.mockexam.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "372270835442-24c02ljbnfr1opoinpt6052t5ndhchak.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDk1OA6qRP2S6VCreSrmy5NMdHwoSWwElE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "372270835442-24c02ljbnfr1opoinpt6052t5ndhchak.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
