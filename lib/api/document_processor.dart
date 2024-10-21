@@ -21,7 +21,7 @@ Future<String> processDocument(
   }
 }
 
-String processPdf(List<int> filebytes) {
+Future<String> processPdf(List<int> filebytes) async {
   syncfusionPdf.PdfDocument document =
       syncfusionPdf.PdfDocument(inputBytes: Uint8List.fromList(filebytes));
 
@@ -35,7 +35,7 @@ String processPdf(List<int> filebytes) {
   return extractedText.trim();
 }
 
-String processXml(List<int> fileBytes) {
+Future<String> processXml(List<int> fileBytes) async {
   final xmlDoc = XmlDocument.parse(utf8.decode(fileBytes));
   final textElements = xmlDoc.findAllElements('text');
   String extractedText = '';
@@ -52,6 +52,6 @@ Future<String> processDocx(List<int> fileBytes) async {
   return text.trim();
 }
 
-String processText(List<int> fileBytes) {
+Future<String> processText(List<int> fileBytes) async {
   return utf8.decode(fileBytes).trim();
 }

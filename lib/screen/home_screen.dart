@@ -43,7 +43,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 summarizeButton(context),
               ],
             ),
-          ),  
+          ),
         ),
       ),
     );
@@ -172,7 +172,7 @@ class _HomeScreenState extends State<HomeScreen> {
   Future<void> pickFile() async {
     final result = await FilePicker.platform.pickFiles(
       type: FileType.custom,
-      allowedExtensions: ['pdf', 'docx', 'txt'],
+      allowedExtensions: ['pdf', 'xml', 'docx', 'txt'],
     );
     if (result != null && result.files.isNotEmpty) {
       setState(() {

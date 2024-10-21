@@ -40,8 +40,8 @@ class ApiClient {
 
       final response = await model.generateContent(contents);
 
-      if (response.candidates != null && response.candidates!.isNotEmpty) {
-        String? generateText = response.candidates!.first.text;
+      if (response.candidates.isNotEmpty) {
+        String? generateText = response.candidates.first.text;
 
         return generateText?.trim() ?? 'No summary generated';
       } else {
